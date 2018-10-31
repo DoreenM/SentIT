@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+	margin: auto;
+	width: 60%;
+}
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #4A235A;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #76D7C4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 24%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #E74C3C;
+	
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+	background-color: #FBFCFC;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    border: 3px solid #AEB6BF;
+	width: 100%;
+    padding: 16px;
+	margin: auto;
+	background-color: #F4ECF7;
+}
+
+span.psw {
+    float: center;
+    padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: center;
+    }
+    .cancelbtn {
+       width: 40%;
+    }
+}
+</style>
+</head>
+<body>
+<center> <h1>Login Page</h1></center>
+  <div class="imgcontainer">
+    <img src="avatar.png" alt="Avatar" class="avatar">
+  </div>
+<form action="/action_page.php">
+  <div class="container">
+   <center> <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required> </br></center>
+
+    <center><label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required> </br></center>
+
+    <center><button type="submit">Login</button> <button type="submit">Sign up</button>
+    </center>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div
+</form>
+
+</body>
+</html>
